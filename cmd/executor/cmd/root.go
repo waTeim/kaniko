@@ -253,9 +253,9 @@ func checkKanikoDir(dir string) error {
 	if dir != constants.DefaultKanikoPath {
 
 		// The destination directory may be across a different partition, so we cannot simply rename/move the directory in this case.
-		if _, err := util.CopyDir(constants.DefaultKanikoPath, dir, util.FileContext{}, util.DoNotChangeUID, util.DoNotChangeGID); err != nil {
-			return err
-		}
+		//if _, err := util.CopyDir(constants.DefaultKanikoPath, dir, util.FileContext{}, util.DoNotChangeUID, util.DoNotChangeGID); err != nil {
+		//	return err
+		//}
 
 		//if err := os.RemoveAll(constants.DefaultKanikoPath); err != nil {
 		//	return err
